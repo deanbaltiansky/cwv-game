@@ -320,9 +320,17 @@ gdjs.CWVCode.GDOverlayTextObjects5= [];
 gdjs.CWVCode.GDOverlayTextObjects6= [];
 gdjs.CWVCode.GDOverlayTextObjects7= [];
 gdjs.CWVCode.GDOverlayTextObjects8= [];
+gdjs.CWVCode.GDOverlayNextBtnObjects1= [];
+gdjs.CWVCode.GDOverlayNextBtnObjects2= [];
+gdjs.CWVCode.GDOverlayNextBtnObjects3= [];
+gdjs.CWVCode.GDOverlayNextBtnObjects4= [];
+gdjs.CWVCode.GDOverlayNextBtnObjects5= [];
+gdjs.CWVCode.GDOverlayNextBtnObjects6= [];
+gdjs.CWVCode.GDOverlayNextBtnObjects7= [];
+gdjs.CWVCode.GDOverlayNextBtnObjects8= [];
 
 
-gdjs.CWVCode.userFunc0xbe01d0 = function GDJSInlineCode(runtimeScene) {
+gdjs.CWVCode.userFunc0xb13588 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 runtimeScene.setBackgroundColor(100,100,240);
 const gv = runtimeScene.getVariables();
@@ -332,7 +340,7 @@ if (window.gdSend) window.gdSend("end_game", fruit, {});
 if (window.gdComplete) window.gdComplete({ fruit_collected: fruit });
 
 };
-gdjs.CWVCode.userFunc0x98a608 = function GDJSInlineCode(runtimeScene) {
+gdjs.CWVCode.userFunc0xcc4308 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 runtimeScene.setBackgroundColor(100,100,240);
 const gv = runtimeScene.getVariables();
@@ -362,7 +370,7 @@ gdjs.CWVCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.CWVCode.userFunc0xbe01d0(runtimeScene);
+gdjs.CWVCode.userFunc0xb13588(runtimeScene);
 
 }
 
@@ -370,7 +378,7 @@ gdjs.CWVCode.userFunc0xbe01d0(runtimeScene);
 {
 
 
-gdjs.CWVCode.userFunc0x98a608(runtimeScene);
+gdjs.CWVCode.userFunc0xcc4308(runtimeScene);
 
 }
 
@@ -1779,6 +1787,7 @@ gdjs.copyArray(runtimeScene.getObjects("FinalCard"), gdjs.CWVCode.GDFinalCardObj
 gdjs.copyArray(runtimeScene.getObjects("Good_shake"), gdjs.CWVCode.GDGood_9595shakeObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Hut_under_attack"), gdjs.CWVCode.GDHut_9595under_9595attackObjects1);
 gdjs.copyArray(runtimeScene.getObjects("OverlayDim"), gdjs.CWVCode.GDOverlayDimObjects1);
+gdjs.copyArray(runtimeScene.getObjects("OverlayNextBtn"), gdjs.CWVCode.GDOverlayNextBtnObjects1);
 gdjs.copyArray(runtimeScene.getObjects("OverlayText"), gdjs.CWVCode.GDOverlayTextObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Pickedup"), gdjs.CWVCode.GDPickedupObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Took_from_enemy"), gdjs.CWVCode.GDTook_9595from_9595enemyObjects1);
@@ -1831,6 +1840,9 @@ gdjs.copyArray(runtimeScene.getObjects("Welcome"), gdjs.CWVCode.GDWelcomeObjects
 }
 }{for(var i = 0, len = gdjs.CWVCode.GDOverlayTextObjects1.length ;i < len;++i) {
     gdjs.CWVCode.GDOverlayTextObjects1[i].getBehavior("Text").setText("");
+}
+}{for(var i = 0, len = gdjs.CWVCode.GDOverlayNextBtnObjects1.length ;i < len;++i) {
+    gdjs.CWVCode.GDOverlayNextBtnObjects1[i].hide();
 }
 }}
 
@@ -1894,6 +1906,7 @@ if (isConditionTrue_0) {
 /* Reuse gdjs.CWVCode.GDEndGameButtonObjects1 */
 gdjs.copyArray(runtimeScene.getObjects("FinalCard"), gdjs.CWVCode.GDFinalCardObjects1);
 gdjs.copyArray(runtimeScene.getObjects("OverlayDim"), gdjs.CWVCode.GDOverlayDimObjects1);
+gdjs.copyArray(runtimeScene.getObjects("OverlayNextBtn"), gdjs.CWVCode.GDOverlayNextBtnObjects1);
 gdjs.copyArray(runtimeScene.getObjects("OverlayText"), gdjs.CWVCode.GDOverlayTextObjects1);
 {for(var i = 0, len = gdjs.CWVCode.GDOverlayDimObjects1.length ;i < len;++i) {
     gdjs.CWVCode.GDOverlayDimObjects1[i].getBehavior("Tween").addObjectOpacityTween2("end", 180, "linear", 0.3, false);
@@ -1910,7 +1923,40 @@ gdjs.copyArray(runtimeScene.getObjects("OverlayText"), gdjs.CWVCode.GDOverlayTex
 }{for(var i = 0, len = gdjs.CWVCode.GDOverlayTextObjects1.length ;i < len;++i) {
     gdjs.CWVCode.GDOverlayTextObjects1[i].setCenterPositionInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2,gdjs.evtTools.window.getGameResolutionHeight(runtimeScene) / 2);
 }
+}{for(var i = 0, len = gdjs.CWVCode.GDOverlayNextBtnObjects1.length ;i < len;++i) {
+    gdjs.CWVCode.GDOverlayNextBtnObjects1[i].getBehavior("Tween").addObjectOpacityTween2("", 255, "linear", 0.3, false);
 }
+}{for(var i = 0, len = gdjs.CWVCode.GDOverlayNextBtnObjects1.length ;i < len;++i) {
+    gdjs.CWVCode.GDOverlayNextBtnObjects1[i].setCenterPositionInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2,gdjs.evtTools.window.getGameResolutionHeight(runtimeScene) / 2 + 40);
+}
+}}
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("OverlayNextBtn"), gdjs.CWVCode.GDOverlayNextBtnObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.CWVCode.GDOverlayNextBtnObjects1.length;i<l;++i) {
+    if ( gdjs.CWVCode.GDOverlayNextBtnObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.CWVCode.GDOverlayNextBtnObjects1[k] = gdjs.CWVCode.GDOverlayNextBtnObjects1[i];
+        ++k;
+    }
+}
+gdjs.CWVCode.GDOverlayNextBtnObjects1.length = k;
+if (isConditionTrue_0) {
+
 { //Subevents
 gdjs.CWVCode.eventsList0(runtimeScene);} //End of subevents
 }
@@ -4986,6 +5032,14 @@ gdjs.CWVCode.GDOverlayTextObjects5.length = 0;
 gdjs.CWVCode.GDOverlayTextObjects6.length = 0;
 gdjs.CWVCode.GDOverlayTextObjects7.length = 0;
 gdjs.CWVCode.GDOverlayTextObjects8.length = 0;
+gdjs.CWVCode.GDOverlayNextBtnObjects1.length = 0;
+gdjs.CWVCode.GDOverlayNextBtnObjects2.length = 0;
+gdjs.CWVCode.GDOverlayNextBtnObjects3.length = 0;
+gdjs.CWVCode.GDOverlayNextBtnObjects4.length = 0;
+gdjs.CWVCode.GDOverlayNextBtnObjects5.length = 0;
+gdjs.CWVCode.GDOverlayNextBtnObjects6.length = 0;
+gdjs.CWVCode.GDOverlayNextBtnObjects7.length = 0;
+gdjs.CWVCode.GDOverlayNextBtnObjects8.length = 0;
 
 gdjs.CWVCode.eventsList51(runtimeScene);
 gdjs.CWVCode.GDPlayerObjects1.length = 0;
@@ -5308,6 +5362,14 @@ gdjs.CWVCode.GDOverlayTextObjects5.length = 0;
 gdjs.CWVCode.GDOverlayTextObjects6.length = 0;
 gdjs.CWVCode.GDOverlayTextObjects7.length = 0;
 gdjs.CWVCode.GDOverlayTextObjects8.length = 0;
+gdjs.CWVCode.GDOverlayNextBtnObjects1.length = 0;
+gdjs.CWVCode.GDOverlayNextBtnObjects2.length = 0;
+gdjs.CWVCode.GDOverlayNextBtnObjects3.length = 0;
+gdjs.CWVCode.GDOverlayNextBtnObjects4.length = 0;
+gdjs.CWVCode.GDOverlayNextBtnObjects5.length = 0;
+gdjs.CWVCode.GDOverlayNextBtnObjects6.length = 0;
+gdjs.CWVCode.GDOverlayNextBtnObjects7.length = 0;
+gdjs.CWVCode.GDOverlayNextBtnObjects8.length = 0;
 
 
 return;

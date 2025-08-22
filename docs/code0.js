@@ -56,7 +56,61 @@ gdjs.IntroCode.GDArrow_9595shorter_9595rObjects1= [];
 gdjs.IntroCode.GDArrow_9595shorter_9595rObjects2= [];
 
 
+gdjs.IntroCode.userFunc0xb7ea98 = function GDJSInlineCode(runtimeScene) {
+"use strict";
+runtimeScene.setBackgroundColor(100,100,240);
+const params = new URLSearchParams(window.location.search);
+const gv = runtimeScene.getGame().getVariables();
+gv.get("rid").setString(params.get("rid") || "");
+gv.get("cond").setString(params.get("cond") || "");
+gv.get("pid").setString(params.get("pid") || "");
+};
+gdjs.IntroCode.userFunc0x98b7f8 = function GDJSInlineCode(runtimeScene) {
+"use strict";
+runtimeScene.setBackgroundColor(100,100,240);
+// Helper to send an in-game event to Qualtrics
+window.gdSend = function(name, value, meta) {
+  if (!window.parent) return;
+  window.parent.postMessage({
+    type: "gdev_event",
+    name: name,              // short event name (e.g., "shake_tree")
+    value: value ?? 1,        // numeric value (e.g., apples gained)
+    meta: meta || {},         // extra details (e.g., { tree:"north" })
+    t: Date.now()
+  }, "*");
+};
+
+// Helper to mark the game complete and send a summary
+window.gdComplete = function(summary) {
+  if (!window.parent) return;
+  window.parent.postMessage({
+    type: "gdev_status",
+    status: "complete",
+    summary: summary || {},   // totals from the game
+    t: Date.now()
+  }, "*");
+};
+
+};
 gdjs.IntroCode.eventsList0 = function(runtimeScene) {
+
+{
+
+
+gdjs.IntroCode.userFunc0xb7ea98(runtimeScene);
+
+}
+
+
+{
+
+
+gdjs.IntroCode.userFunc0x98b7f8(runtimeScene);
+
+}
+
+
+};gdjs.IntroCode.eventsList1 = function(runtimeScene) {
 
 {
 
@@ -65,7 +119,7 @@ gdjs.copyArray(runtimeScene.getObjects("Skip_button"), gdjs.IntroCode.GDSkip_959
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 for (var i = 0, k = 0, l = gdjs.IntroCode.GDSkip_9595buttonObjects1.length;i<l;++i) {
-    if ( gdjs.IntroCode.GDSkip_9595buttonObjects1[i].IsClicked(null) ) {
+    if ( gdjs.IntroCode.GDSkip_9595buttonObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
         isConditionTrue_0 = true;
         gdjs.IntroCode.GDSkip_9595buttonObjects1[k] = gdjs.IntroCode.GDSkip_9595buttonObjects1[i];
         ++k;
@@ -87,7 +141,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12682380);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12809700);
 }
 }
 if (isConditionTrue_0) {
@@ -196,7 +250,10 @@ gdjs.copyArray(runtimeScene.getObjects("Your_goal__get_fruit__return_it_to_your_
 }{for(var i = 0, len = gdjs.IntroCode.GDArrow_9595shorter_9595rObjects1.length ;i < len;++i) {
     gdjs.IntroCode.GDArrow_9595shorter_9595rObjects1[i].getBehavior("Opacity").setOpacity(0);
 }
-}}
+}
+{ //Subevents
+gdjs.IntroCode.eventsList0(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -208,7 +265,7 @@ gdjs.copyArray(runtimeScene.getObjects("Next_button"), gdjs.IntroCode.GDNext_959
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 for (var i = 0, k = 0, l = gdjs.IntroCode.GDNext_9595buttonObjects1.length;i<l;++i) {
-    if ( gdjs.IntroCode.GDNext_9595buttonObjects1[i].IsClicked(null) ) {
+    if ( gdjs.IntroCode.GDNext_9595buttonObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
         isConditionTrue_0 = true;
         gdjs.IntroCode.GDNext_9595buttonObjects1[k] = gdjs.IntroCode.GDNext_9595buttonObjects1[i];
         ++k;
@@ -229,7 +286,7 @@ gdjs.copyArray(runtimeScene.getObjects("Restart"), gdjs.IntroCode.GDRestartObjec
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 for (var i = 0, k = 0, l = gdjs.IntroCode.GDRestartObjects1.length;i<l;++i) {
-    if ( gdjs.IntroCode.GDRestartObjects1[i].IsClicked(null) ) {
+    if ( gdjs.IntroCode.GDRestartObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
         isConditionTrue_0 = true;
         gdjs.IntroCode.GDRestartObjects1[k] = gdjs.IntroCode.GDRestartObjects1[i];
         ++k;
@@ -537,7 +594,7 @@ gdjs.IntroCode.GDArrow_9595shorterObjects2.length = 0;
 gdjs.IntroCode.GDArrow_9595shorter_9595rObjects1.length = 0;
 gdjs.IntroCode.GDArrow_9595shorter_9595rObjects2.length = 0;
 
-gdjs.IntroCode.eventsList0(runtimeScene);
+gdjs.IntroCode.eventsList1(runtimeScene);
 gdjs.IntroCode.GDGrassObjects1.length = 0;
 gdjs.IntroCode.GDGrassObjects2.length = 0;
 gdjs.IntroCode.GDPlayerObjects1.length = 0;

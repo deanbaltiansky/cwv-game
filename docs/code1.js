@@ -330,7 +330,7 @@ gdjs.CWVCode.GDOverlayNextBtnObjects7= [];
 gdjs.CWVCode.GDOverlayNextBtnObjects8= [];
 
 
-gdjs.CWVCode.userFunc0xb13588 = function GDJSInlineCode(runtimeScene) {
+gdjs.CWVCode.userFunc0xcbd3e8 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 runtimeScene.setBackgroundColor(100,100,240);
 const gv = runtimeScene.getVariables();
@@ -340,7 +340,7 @@ if (window.gdSend) window.gdSend("end_game", fruit, {});
 if (window.gdComplete) window.gdComplete({ fruit_collected: fruit });
 
 };
-gdjs.CWVCode.userFunc0xcc4308 = function GDJSInlineCode(runtimeScene) {
+gdjs.CWVCode.userFunc0xcc4c30 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 runtimeScene.setBackgroundColor(100,100,240);
 const gv = runtimeScene.getVariables();
@@ -370,7 +370,7 @@ gdjs.CWVCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.CWVCode.userFunc0xb13588(runtimeScene);
+gdjs.CWVCode.userFunc0xcbd3e8(runtimeScene);
 
 }
 
@@ -378,7 +378,7 @@ gdjs.CWVCode.userFunc0xb13588(runtimeScene);
 {
 
 
-gdjs.CWVCode.userFunc0xcc4308(runtimeScene);
+gdjs.CWVCode.userFunc0xcc4c30(runtimeScene);
 
 }
 
@@ -1842,7 +1842,7 @@ gdjs.copyArray(runtimeScene.getObjects("Welcome"), gdjs.CWVCode.GDWelcomeObjects
     gdjs.CWVCode.GDOverlayTextObjects1[i].getBehavior("Text").setText("");
 }
 }{for(var i = 0, len = gdjs.CWVCode.GDOverlayNextBtnObjects1.length ;i < len;++i) {
-    gdjs.CWVCode.GDOverlayNextBtnObjects1[i].hide();
+    gdjs.CWVCode.GDOverlayNextBtnObjects1[i].getBehavior("Opacity").setOpacity(0);
 }
 }}
 
@@ -1927,7 +1927,7 @@ gdjs.copyArray(runtimeScene.getObjects("OverlayText"), gdjs.CWVCode.GDOverlayTex
     gdjs.CWVCode.GDOverlayNextBtnObjects1[i].getBehavior("Tween").addObjectOpacityTween2("", 255, "linear", 0.3, false);
 }
 }{for(var i = 0, len = gdjs.CWVCode.GDOverlayNextBtnObjects1.length ;i < len;++i) {
-    gdjs.CWVCode.GDOverlayNextBtnObjects1[i].setCenterPositionInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2,gdjs.evtTools.window.getGameResolutionHeight(runtimeScene) / 2 + 40);
+    gdjs.CWVCode.GDOverlayNextBtnObjects1[i].setCenterPositionInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2,gdjs.evtTools.window.getGameResolutionHeight(runtimeScene) / 2 + 80);
 }
 }}
 

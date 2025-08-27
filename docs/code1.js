@@ -328,9 +328,17 @@ gdjs.CWVCode.GDOverlayNextBtnObjects5= [];
 gdjs.CWVCode.GDOverlayNextBtnObjects6= [];
 gdjs.CWVCode.GDOverlayNextBtnObjects7= [];
 gdjs.CWVCode.GDOverlayNextBtnObjects8= [];
+gdjs.CWVCode.GDEnd_9595buttonObjects1= [];
+gdjs.CWVCode.GDEnd_9595buttonObjects2= [];
+gdjs.CWVCode.GDEnd_9595buttonObjects3= [];
+gdjs.CWVCode.GDEnd_9595buttonObjects4= [];
+gdjs.CWVCode.GDEnd_9595buttonObjects5= [];
+gdjs.CWVCode.GDEnd_9595buttonObjects6= [];
+gdjs.CWVCode.GDEnd_9595buttonObjects7= [];
+gdjs.CWVCode.GDEnd_9595buttonObjects8= [];
 
 
-gdjs.CWVCode.userFunc0xd1bd00 = function GDJSInlineCode(runtimeScene) {
+gdjs.CWVCode.userFunc0xe01b88 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 runtimeScene.setBackgroundColor(100,100,240);
 const gv = runtimeScene.getVariables();
@@ -340,7 +348,7 @@ if (window.gdSend) window.gdSend("end_game", fruit, {});
 if (window.gdComplete) window.gdComplete({ fruit_collected: fruit });
 
 };
-gdjs.CWVCode.userFunc0xd1e140 = function GDJSInlineCode(runtimeScene) {
+gdjs.CWVCode.userFunc0xdfb188 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 runtimeScene.setBackgroundColor(100,100,240);
 const gv = runtimeScene.getVariables();
@@ -370,7 +378,7 @@ gdjs.CWVCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.CWVCode.userFunc0xd1bd00(runtimeScene);
+gdjs.CWVCode.userFunc0xe01b88(runtimeScene);
 
 }
 
@@ -378,7 +386,7 @@ gdjs.CWVCode.userFunc0xd1bd00(runtimeScene);
 {
 
 
-gdjs.CWVCode.userFunc0xd1e140(runtimeScene);
+gdjs.CWVCode.userFunc0xdfb188(runtimeScene);
 
 }
 
@@ -1890,20 +1898,20 @@ gdjs.copyArray(runtimeScene.getObjects("Player_score_display"), gdjs.CWVCode.GDP
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("EndGameButton"), gdjs.CWVCode.GDEndGameButtonObjects1);
+gdjs.copyArray(runtimeScene.getObjects("End_button"), gdjs.CWVCode.GDEnd_9595buttonObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.CWVCode.GDEndGameButtonObjects1.length;i<l;++i) {
-    if ( gdjs.CWVCode.GDEndGameButtonObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+for (var i = 0, k = 0, l = gdjs.CWVCode.GDEnd_9595buttonObjects1.length;i<l;++i) {
+    if ( gdjs.CWVCode.GDEnd_9595buttonObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
         isConditionTrue_0 = true;
-        gdjs.CWVCode.GDEndGameButtonObjects1[k] = gdjs.CWVCode.GDEndGameButtonObjects1[i];
+        gdjs.CWVCode.GDEnd_9595buttonObjects1[k] = gdjs.CWVCode.GDEnd_9595buttonObjects1[i];
         ++k;
     }
 }
-gdjs.CWVCode.GDEndGameButtonObjects1.length = k;
+gdjs.CWVCode.GDEnd_9595buttonObjects1.length = k;
 if (isConditionTrue_0) {
-/* Reuse gdjs.CWVCode.GDEndGameButtonObjects1 */
+/* Reuse gdjs.CWVCode.GDEnd_9595buttonObjects1 */
 gdjs.copyArray(runtimeScene.getObjects("FinalCard"), gdjs.CWVCode.GDFinalCardObjects1);
 gdjs.copyArray(runtimeScene.getObjects("OverlayDim"), gdjs.CWVCode.GDOverlayDimObjects1);
 gdjs.copyArray(runtimeScene.getObjects("OverlayNextBtn"), gdjs.CWVCode.GDOverlayNextBtnObjects1);
@@ -1917,8 +1925,8 @@ gdjs.copyArray(runtimeScene.getObjects("OverlayText"), gdjs.CWVCode.GDOverlayTex
 }{for(var i = 0, len = gdjs.CWVCode.GDOverlayTextObjects1.length ;i < len;++i) {
     gdjs.CWVCode.GDOverlayTextObjects1[i].getBehavior("Text").setText("Thanks! You collected " + gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0))) + " fruit.");
 }
-}{for(var i = 0, len = gdjs.CWVCode.GDEndGameButtonObjects1.length ;i < len;++i) {
-    gdjs.CWVCode.GDEndGameButtonObjects1[i].hide();
+}{for(var i = 0, len = gdjs.CWVCode.GDEnd_9595buttonObjects1.length ;i < len;++i) {
+    gdjs.CWVCode.GDEnd_9595buttonObjects1[i].hide();
 }
 }{for(var i = 0, len = gdjs.CWVCode.GDOverlayTextObjects1.length ;i < len;++i) {
     gdjs.CWVCode.GDOverlayTextObjects1[i].setCenterPositionInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2,gdjs.evtTools.window.getGameResolutionHeight(runtimeScene) / 2);
@@ -5040,6 +5048,14 @@ gdjs.CWVCode.GDOverlayNextBtnObjects5.length = 0;
 gdjs.CWVCode.GDOverlayNextBtnObjects6.length = 0;
 gdjs.CWVCode.GDOverlayNextBtnObjects7.length = 0;
 gdjs.CWVCode.GDOverlayNextBtnObjects8.length = 0;
+gdjs.CWVCode.GDEnd_9595buttonObjects1.length = 0;
+gdjs.CWVCode.GDEnd_9595buttonObjects2.length = 0;
+gdjs.CWVCode.GDEnd_9595buttonObjects3.length = 0;
+gdjs.CWVCode.GDEnd_9595buttonObjects4.length = 0;
+gdjs.CWVCode.GDEnd_9595buttonObjects5.length = 0;
+gdjs.CWVCode.GDEnd_9595buttonObjects6.length = 0;
+gdjs.CWVCode.GDEnd_9595buttonObjects7.length = 0;
+gdjs.CWVCode.GDEnd_9595buttonObjects8.length = 0;
 
 gdjs.CWVCode.eventsList51(runtimeScene);
 gdjs.CWVCode.GDPlayerObjects1.length = 0;
@@ -5370,6 +5386,14 @@ gdjs.CWVCode.GDOverlayNextBtnObjects5.length = 0;
 gdjs.CWVCode.GDOverlayNextBtnObjects6.length = 0;
 gdjs.CWVCode.GDOverlayNextBtnObjects7.length = 0;
 gdjs.CWVCode.GDOverlayNextBtnObjects8.length = 0;
+gdjs.CWVCode.GDEnd_9595buttonObjects1.length = 0;
+gdjs.CWVCode.GDEnd_9595buttonObjects2.length = 0;
+gdjs.CWVCode.GDEnd_9595buttonObjects3.length = 0;
+gdjs.CWVCode.GDEnd_9595buttonObjects4.length = 0;
+gdjs.CWVCode.GDEnd_9595buttonObjects5.length = 0;
+gdjs.CWVCode.GDEnd_9595buttonObjects6.length = 0;
+gdjs.CWVCode.GDEnd_9595buttonObjects7.length = 0;
+gdjs.CWVCode.GDEnd_9595buttonObjects8.length = 0;
 
 
 return;

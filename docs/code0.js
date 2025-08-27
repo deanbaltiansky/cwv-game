@@ -56,7 +56,7 @@ gdjs.IntroCode.GDArrow_9595shorter_9595rObjects1= [];
 gdjs.IntroCode.GDArrow_9595shorter_9595rObjects2= [];
 
 
-gdjs.IntroCode.userFunc0xb6d240 = function GDJSInlineCode(runtimeScene) {
+gdjs.IntroCode.userFunc0xde3098 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 runtimeScene.setBackgroundColor(100,100,240);
 const params = new URLSearchParams(window.location.search);
@@ -65,7 +65,7 @@ gv.get("rid").setString(params.get("rid") || "");
 gv.get("cond").setString(params.get("cond") || "");
 gv.get("pid").setString(params.get("pid") || "");
 };
-gdjs.IntroCode.userFunc0x8c9858 = function GDJSInlineCode(runtimeScene) {
+gdjs.IntroCode.userFunc0xded708 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 runtimeScene.setBackgroundColor(100,100,240);
 // Helper to send an in-game event to Qualtrics
@@ -92,12 +92,30 @@ window.gdComplete = function(summary) {
 };
 
 };
+gdjs.IntroCode.userFunc0xdefb40 = function GDJSInlineCode(runtimeScene) {
+"use strict";
+(function () {
+  const params = new URLSearchParams(window.location.search);
+  let name = params.get("participant_name") || "";
+  name = name.trim();
+
+  // Keep Unicode letters, numbers, space, hyphen, apostrophes
+  name = name.replace(/[^\p{L}\p{N} \-'\u2019]/gu, "");
+  if (name.length > 40) name = name.slice(0, 40);
+
+  // If name is non-empty, prepend a space. Otherwise, leave it blank.
+  let displayName = name ? " " + name : "";
+
+  runtimeScene.getGame().getVariables().get("participant_name").setString(displayName);
+})();
+
+};
 gdjs.IntroCode.eventsList0 = function(runtimeScene) {
 
 {
 
 
-gdjs.IntroCode.userFunc0xb6d240(runtimeScene);
+gdjs.IntroCode.userFunc0xde3098(runtimeScene);
 
 }
 
@@ -105,7 +123,15 @@ gdjs.IntroCode.userFunc0xb6d240(runtimeScene);
 {
 
 
-gdjs.IntroCode.userFunc0x8c9858(runtimeScene);
+gdjs.IntroCode.userFunc0xded708(runtimeScene);
+
+}
+
+
+{
+
+
+gdjs.IntroCode.userFunc0xdefb40(runtimeScene);
 
 }
 
@@ -141,7 +167,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12809700);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12849940);
 }
 }
 if (isConditionTrue_0) {
@@ -249,6 +275,9 @@ gdjs.copyArray(runtimeScene.getObjects("Your_goal__get_fruit__return_it_to_your_
 }
 }{for(var i = 0, len = gdjs.IntroCode.GDArrow_9595shorter_9595rObjects1.length ;i < len;++i) {
     gdjs.IntroCode.GDArrow_9595shorter_9595rObjects1[i].getBehavior("Opacity").setOpacity(0);
+}
+}{for(var i = 0, len = gdjs.IntroCode.GDThis_9595is_9595youObjects1.length ;i < len;++i) {
+    gdjs.IntroCode.GDThis_9595is_9595youObjects1[i].getBehavior("Text").setText("Welcome" + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().get("participant_name")) + "!" + gdjs.evtTools.string.newLine() + "This is you");
 }
 }
 { //Subevents

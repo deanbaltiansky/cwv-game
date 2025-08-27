@@ -56,7 +56,7 @@ gdjs.IntroCode.GDArrow_9595shorter_9595rObjects1= [];
 gdjs.IntroCode.GDArrow_9595shorter_9595rObjects2= [];
 
 
-gdjs.IntroCode.userFunc0xe7fbe8 = function GDJSInlineCode(runtimeScene) {
+gdjs.IntroCode.userFunc0xd22408 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 runtimeScene.setBackgroundColor(100,100,240);
 const params = new URLSearchParams(window.location.search);
@@ -65,7 +65,7 @@ gv.get("rid").setString(params.get("rid") || "");
 gv.get("cond").setString(params.get("cond") || "");
 gv.get("pid").setString(params.get("pid") || "");
 };
-gdjs.IntroCode.userFunc0xd64b30 = function GDJSInlineCode(runtimeScene) {
+gdjs.IntroCode.userFunc0xd26f58 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 runtimeScene.setBackgroundColor(100,100,240);
 // Helper to send an in-game event to Qualtrics
@@ -92,7 +92,7 @@ window.gdComplete = function(summary) {
 };
 
 };
-gdjs.IntroCode.userFunc0xd651f8 = function GDJSInlineCode(runtimeScene) {
+gdjs.IntroCode.userFunc0xd26698 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 (function () {
   const params = new URLSearchParams(window.location.search);
@@ -115,7 +115,7 @@ gdjs.IntroCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.IntroCode.userFunc0xe7fbe8(runtimeScene);
+gdjs.IntroCode.userFunc0xd22408(runtimeScene);
 
 }
 
@@ -123,7 +123,7 @@ gdjs.IntroCode.userFunc0xe7fbe8(runtimeScene);
 {
 
 
-gdjs.IntroCode.userFunc0xd64b30(runtimeScene);
+gdjs.IntroCode.userFunc0xd26f58(runtimeScene);
 
 }
 
@@ -131,7 +131,7 @@ gdjs.IntroCode.userFunc0xd64b30(runtimeScene);
 {
 
 
-gdjs.IntroCode.userFunc0xd651f8(runtimeScene);
+gdjs.IntroCode.userFunc0xd26698(runtimeScene);
 
 }
 
@@ -155,6 +155,26 @@ gdjs.IntroCode.GDSkip_9595buttonObjects1.length = k;
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "CWV", false);
 }}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11264564);
+}
+}
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.IntroCode.eventsList0(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -279,10 +299,7 @@ gdjs.copyArray(runtimeScene.getObjects("Your_goal__get_fruit__return_it_to_your_
 }{for(var i = 0, len = gdjs.IntroCode.GDThis_9595is_9595youObjects1.length ;i < len;++i) {
     gdjs.IntroCode.GDThis_9595is_9595youObjects1[i].getBehavior("Text").setText("Welcome" + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(3)) + "!" + gdjs.evtTools.string.newLine() + "This is you");
 }
-}
-{ //Subevents
-gdjs.IntroCode.eventsList0(runtimeScene);} //End of subevents
-}
+}}
 
 }
 

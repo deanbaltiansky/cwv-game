@@ -354,7 +354,7 @@ gdjs.CWVCode.GDCondTextObjects7= [];
 gdjs.CWVCode.GDCondTextObjects8= [];
 
 
-gdjs.CWVCode.userFunc0xcfb660 = function GDJSInlineCode(runtimeScene) {
+gdjs.CWVCode.userFunc0xa5e820 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 runtimeScene.setBackgroundColor(100,100,240);
 const gv = runtimeScene.getVariables();
@@ -364,7 +364,7 @@ if (window.gdSend) window.gdSend("end_game", fruit, {});
 if (window.gdComplete) window.gdComplete({ fruit_collected: fruit });
 
 };
-gdjs.CWVCode.userFunc0xcfdac0 = function GDJSInlineCode(runtimeScene) {
+gdjs.CWVCode.userFunc0xa60350 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 runtimeScene.setBackgroundColor(100,100,240);
 const gv = runtimeScene.getVariables();
@@ -394,7 +394,7 @@ gdjs.CWVCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.CWVCode.userFunc0xcfb660(runtimeScene);
+gdjs.CWVCode.userFunc0xa5e820(runtimeScene);
 
 }
 
@@ -402,7 +402,7 @@ gdjs.CWVCode.userFunc0xcfb660(runtimeScene);
 {
 
 
-gdjs.CWVCode.userFunc0xcfdac0(runtimeScene);
+gdjs.CWVCode.userFunc0xa60350(runtimeScene);
 
 }
 
@@ -1903,7 +1903,7 @@ isConditionTrue_0 = false;
 {isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(1).getAsString() == "fast");
 }
 if (isConditionTrue_0) {
-{runtimeScene.getScene().getVariables().getFromIndex(19).setNumber(300);
+{runtimeScene.getScene().getVariables().getFromIndex(19).setNumber(350);
 }}
 
 }

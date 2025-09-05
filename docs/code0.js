@@ -56,7 +56,7 @@ gdjs.IntroCode.GDArrow_9595shorter_9595rObjects1= [];
 gdjs.IntroCode.GDArrow_9595shorter_9595rObjects2= [];
 
 
-gdjs.IntroCode.userFunc0xd76eb0 = function GDJSInlineCode(runtimeScene) {
+gdjs.IntroCode.userFunc0x953150 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 runtimeScene.setBackgroundColor(100,100,240);
 const params = new URLSearchParams(window.location.search);
@@ -65,7 +65,7 @@ gv.get("rid").setString(params.get("rid") || "");
 gv.get("cond").setString(params.get("cond") || "");
 gv.get("pid").setString(params.get("pid") || "");
 };
-gdjs.IntroCode.userFunc0xd75e38 = function GDJSInlineCode(runtimeScene) {
+gdjs.IntroCode.userFunc0x9674c0 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 runtimeScene.setBackgroundColor(100,100,240);
 // Helper to send an in-game event to Qualtrics
@@ -92,7 +92,7 @@ window.gdComplete = function(summary) {
 };
 
 };
-gdjs.IntroCode.userFunc0xd7cb68 = function GDJSInlineCode(runtimeScene) {
+gdjs.IntroCode.userFunc0x953220 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 (function () {
   const params = new URLSearchParams(window.location.search);
@@ -115,7 +115,7 @@ gdjs.IntroCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.IntroCode.userFunc0xd76eb0(runtimeScene);
+gdjs.IntroCode.userFunc0x953150(runtimeScene);
 
 }
 
@@ -123,7 +123,7 @@ gdjs.IntroCode.userFunc0xd76eb0(runtimeScene);
 {
 
 
-gdjs.IntroCode.userFunc0xd75e38(runtimeScene);
+gdjs.IntroCode.userFunc0x9674c0(runtimeScene);
 
 }
 
@@ -131,7 +131,7 @@ gdjs.IntroCode.userFunc0xd75e38(runtimeScene);
 {
 
 
-gdjs.IntroCode.userFunc0xd7cb68(runtimeScene);
+gdjs.IntroCode.userFunc0x953220(runtimeScene);
 
 }
 
@@ -145,7 +145,7 @@ gdjs.copyArray(runtimeScene.getObjects("Skip_button"), gdjs.IntroCode.GDSkip_959
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 for (var i = 0, k = 0, l = gdjs.IntroCode.GDSkip_9595buttonObjects1.length;i<l;++i) {
-    if ( gdjs.IntroCode.GDSkip_9595buttonObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+    if ( gdjs.IntroCode.GDSkip_9595buttonObjects1[i].IsClicked(null) ) {
         isConditionTrue_0 = true;
         gdjs.IntroCode.GDSkip_9595buttonObjects1[k] = gdjs.IntroCode.GDSkip_9595buttonObjects1[i];
         ++k;
@@ -167,7 +167,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11264564);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12924644);
 }
 }
 if (isConditionTrue_0) {
@@ -187,7 +187,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12849940);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12919196);
 }
 }
 if (isConditionTrue_0) {
@@ -311,7 +311,7 @@ gdjs.copyArray(runtimeScene.getObjects("Next_button"), gdjs.IntroCode.GDNext_959
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 for (var i = 0, k = 0, l = gdjs.IntroCode.GDNext_9595buttonObjects1.length;i<l;++i) {
-    if ( gdjs.IntroCode.GDNext_9595buttonObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+    if ( gdjs.IntroCode.GDNext_9595buttonObjects1[i].IsClicked(null) ) {
         isConditionTrue_0 = true;
         gdjs.IntroCode.GDNext_9595buttonObjects1[k] = gdjs.IntroCode.GDNext_9595buttonObjects1[i];
         ++k;
@@ -332,7 +332,7 @@ gdjs.copyArray(runtimeScene.getObjects("Restart"), gdjs.IntroCode.GDRestartObjec
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 for (var i = 0, k = 0, l = gdjs.IntroCode.GDRestartObjects1.length;i<l;++i) {
-    if ( gdjs.IntroCode.GDRestartObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+    if ( gdjs.IntroCode.GDRestartObjects1[i].IsClicked(null) ) {
         isConditionTrue_0 = true;
         gdjs.IntroCode.GDRestartObjects1[k] = gdjs.IntroCode.GDRestartObjects1[i];
         ++k;

@@ -196,7 +196,7 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onCreatedCont
 gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onCreatedContext.GDObjectObjects2= [];
 
 
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onCreatedContext.userFunc0xaf1000 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onCreatedContext.userFunc0xb0c4f0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 
 runtimeScene.__boidsExtension = runtimeScene.__boidsExtension || {
@@ -222,7 +222,7 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onCreatedCont
 
 let isConditionTrue_0 = false;
 {
-{gdjs.evtsExt__BoidsMovement__DefineHelperClasses.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+{gdjs.evtsExt__BoidsMovement__DefineHelperClasses.func(runtimeScene, eventsFunctionContext);
 }}
 
 }
@@ -232,9 +232,8 @@ let isConditionTrue_0 = false;
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onCreatedContext.GDObjectObjects1);
 
-var objects = [];
-objects.push.apply(objects,gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onCreatedContext.GDObjectObjects1);
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onCreatedContext.userFunc0xaf1000(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+const objects = gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onCreatedContext.GDObjectObjects1;
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onCreatedContext.userFunc0xb0c4f0(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -318,7 +317,7 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.doStepPreEven
 gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.doStepPreEventsContext.GDObjectObjects2= [];
 
 
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.doStepPreEventsContext.userFunc0xaf1f10 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.doStepPreEventsContext.userFunc0xb0d3a8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 runtimeScene.__boidsExtension.boidsManager.moveAll();
 
@@ -329,9 +328,8 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.doStepPreEven
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.doStepPreEventsContext.GDObjectObjects1);
 
-var objects = [];
-objects.push.apply(objects,gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.doStepPreEventsContext.GDObjectObjects1);
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.doStepPreEventsContext.userFunc0xaf1f10(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+const objects = gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.doStepPreEventsContext.GDObjectObjects1;
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.doStepPreEventsContext.userFunc0xb0d3a8(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -532,7 +530,7 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onActivateCon
 gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onActivateContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onActivateContext.userFunc0xaf1d30 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onActivateContext.userFunc0xb0d190 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const object = objects[0];
 const behaviorName = eventsFunctionContext.getBehaviorName("Behavior");
@@ -545,9 +543,8 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onActivateCon
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onActivateContext.GDObjectObjects1);
 
-var objects = [];
-objects.push.apply(objects,gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onActivateContext.GDObjectObjects1);
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onActivateContext.userFunc0xaf1d30(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+const objects = gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onActivateContext.GDObjectObjects1;
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onActivateContext.userFunc0xb0d190(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -628,7 +625,7 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onDeActivateC
 gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onDeActivateContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onDeActivateContext.userFunc0xaf1d48 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onDeActivateContext.userFunc0xb0d1a8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const object = objects[0];
 const behaviorName = eventsFunctionContext.getBehaviorName("Behavior");
@@ -641,9 +638,8 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onDeActivateC
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onDeActivateContext.GDObjectObjects1);
 
-var objects = [];
-objects.push.apply(objects,gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onDeActivateContext.GDObjectObjects1);
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onDeActivateContext.userFunc0xaf1d48(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+const objects = gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onDeActivateContext.GDObjectObjects1;
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onDeActivateContext.userFunc0xb0d1a8(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -724,7 +720,7 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onDestroyCont
 gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onDestroyContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onDestroyContext.userFunc0xaf1d30 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onDestroyContext.userFunc0xb0d190 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 
 const object = objects[0];
@@ -738,9 +734,8 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onDestroyCont
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onDestroyContext.GDObjectObjects1);
 
-var objects = [];
-objects.push.apply(objects,gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onDestroyContext.GDObjectObjects1);
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onDestroyContext.userFunc0xaf1d30(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+const objects = gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onDestroyContext.GDObjectObjects1;
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onDestroyContext.userFunc0xb0d190(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -821,7 +816,7 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveInDirecti
 gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveInDirectionContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveInDirectionContext.userFunc0xaf1ec8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveInDirectionContext.userFunc0xb0d328 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const object = objects[0];
 const behaviorName = eventsFunctionContext.getBehaviorName("Behavior");
@@ -838,9 +833,8 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveInDirecti
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveInDirectionContext.GDObjectObjects1);
 
-var objects = [];
-objects.push.apply(objects,gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveInDirectionContext.GDObjectObjects1);
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveInDirectionContext.userFunc0xaf1ec8(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+const objects = gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveInDirectionContext.GDObjectObjects1;
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveInDirectionContext.userFunc0xb0d328(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -934,7 +928,7 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveToPositionContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveToPositionContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveToPositionContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).MoveInDirection(eventsFunctionContext.getArgument("TargetX") - (gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveToPositionContext.GDObjectObjects1[i].getCenterXInScene()), eventsFunctionContext.getArgument("TargetY") - (gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveToPositionContext.GDObjectObjects1[i].getCenterYInScene()), eventsFunctionContext.getArgument("DecisionWeight"), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+    gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveToPositionContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).MoveInDirection(eventsFunctionContext.getArgument("TargetX") - (gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveToPositionContext.GDObjectObjects1[i].getCenterXInScene()), eventsFunctionContext.getArgument("TargetY") - (gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveToPositionContext.GDObjectObjects1[i].getCenterYInScene()), eventsFunctionContext.getArgument("DecisionWeight"), eventsFunctionContext);
 }
 }}
 
@@ -1051,7 +1045,7 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveToObjectC
 let isConditionTrue_0 = false;
 if (true) {
 {for(var i = 0, len = gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveToObjectContext.GDObjectObjects2.length ;i < len;++i) {
-    gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveToObjectContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).MoveToPosition((( gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveToObjectContext.GDTargetedObjectObjects2.length === 0 ) ? 0 :gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveToObjectContext.GDTargetedObjectObjects2[0].getCenterXInScene()), (( gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveToObjectContext.GDTargetedObjectObjects2.length === 0 ) ? 0 :gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveToObjectContext.GDTargetedObjectObjects2[0].getCenterYInScene()), eventsFunctionContext.getArgument("DecisionWeight"), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+    gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveToObjectContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).MoveToPosition((( gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveToObjectContext.GDTargetedObjectObjects2.length === 0 ) ? 0 :gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveToObjectContext.GDTargetedObjectObjects2[0].getCenterXInScene()), (( gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveToObjectContext.GDTargetedObjectObjects2.length === 0 ) ? 0 :gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveToObjectContext.GDTargetedObjectObjects2[0].getCenterYInScene()), eventsFunctionContext.getArgument("DecisionWeight"), eventsFunctionContext);
 }
 }}
 }
@@ -1166,7 +1160,7 @@ if (isConditionTrue_0) {
 gdjs.copyArray(gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects1, gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects2);
 
 {for(var i = 0, len = gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects2.length ;i < len;++i) {
-    gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).MoveInDirection(-((eventsFunctionContext.getArgument("CenterY") - (gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects2[i].getCenterYInScene()))), eventsFunctionContext.getArgument("CenterX") - (gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects2[i].getCenterXInScene()), eventsFunctionContext.getArgument("DecisionWeight"), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+    gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).MoveInDirection(-((eventsFunctionContext.getArgument("CenterY") - (gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects2[i].getCenterYInScene()))), eventsFunctionContext.getArgument("CenterX") - (gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects2[i].getCenterXInScene()), eventsFunctionContext.getArgument("DecisionWeight"), eventsFunctionContext);
 }
 }}
 
@@ -1190,7 +1184,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects1 */
 {for(var i = 0, len = gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).MoveInDirection(eventsFunctionContext.getArgument("CenterY") - (gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects1[i].getCenterYInScene()), -((eventsFunctionContext.getArgument("CenterX") - (gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects1[i].getCenterXInScene()))), eventsFunctionContext.getArgument("DecisionWeight"), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+    gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).MoveInDirection(eventsFunctionContext.getArgument("CenterY") - (gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects1[i].getCenterYInScene()), -((eventsFunctionContext.getArgument("CenterX") - (gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects1[i].getCenterXInScene()))), eventsFunctionContext.getArgument("DecisionWeight"), eventsFunctionContext);
 }
 }}
 
@@ -1251,7 +1245,7 @@ eventsFunctionContext.localVariables.push(variables);
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects1);
-{eventsFunctionContext.localVariables[0].getFromIndex(0).setNumber(((( gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).VelocityX((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))) * ((( gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects1[0].getCenterYInScene()) - eventsFunctionContext.getArgument("CenterY")) + (( gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).VelocityY((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))) * (eventsFunctionContext.getArgument("CenterX") - (( gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects1[0].getCenterXInScene()))) / (( gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).Speed((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))));
+{eventsFunctionContext.localVariables[0].getFromIndex(0).setNumber(((( gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).VelocityX(eventsFunctionContext)) * ((( gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects1[0].getCenterYInScene()) - eventsFunctionContext.getArgument("CenterY")) + (( gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).VelocityY(eventsFunctionContext)) * (eventsFunctionContext.getArgument("CenterX") - (( gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects1[0].getCenterXInScene()))) / (( gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).Speed(eventsFunctionContext)));
 }
 { //Subevents
 gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidPositionContext.eventsList1(runtimeScene, eventsFunctionContext);} //End of subevents
@@ -1374,7 +1368,7 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidObjectCo
 let isConditionTrue_0 = false;
 if (true) {
 {for(var i = 0, len = gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidObjectContext.GDObjectObjects2.length ;i < len;++i) {
-    gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidObjectContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).AvoidPosition((( gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidObjectContext.GDAvoidedObjectObjects2.length === 0 ) ? 0 :gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidObjectContext.GDAvoidedObjectObjects2[0].getCenterXInScene()), (( gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidObjectContext.GDAvoidedObjectObjects2.length === 0 ) ? 0 :gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidObjectContext.GDAvoidedObjectObjects2[0].getCenterYInScene()), eventsFunctionContext.getArgument("Radius"), eventsFunctionContext.getArgument("DecisionWeight"), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+    gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidObjectContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).AvoidPosition((( gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidObjectContext.GDAvoidedObjectObjects2.length === 0 ) ? 0 :gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidObjectContext.GDAvoidedObjectObjects2[0].getCenterXInScene()), (( gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidObjectContext.GDAvoidedObjectObjects2.length === 0 ) ? 0 :gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AvoidObjectContext.GDAvoidedObjectObjects2[0].getCenterYInScene()), eventsFunctionContext.getArgument("Radius"), eventsFunctionContext.getArgument("DecisionWeight"), eventsFunctionContext);
 }
 }}
 }
@@ -1468,7 +1462,7 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.SpeedContext 
 gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.SpeedContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.SpeedContext.userFunc0xaf5038 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.SpeedContext.userFunc0xb104f0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const object = objects[0];
 const behaviorName = eventsFunctionContext.getBehaviorName("Behavior");
@@ -1485,9 +1479,8 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.SpeedContext.
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.SpeedContext.GDObjectObjects1);
 
-var objects = [];
-objects.push.apply(objects,gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.SpeedContext.GDObjectObjects1);
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.SpeedContext.userFunc0xaf5038(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+const objects = gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.SpeedContext.GDObjectObjects1;
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.SpeedContext.userFunc0xb104f0(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -1568,7 +1561,7 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.VelocityXCont
 gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.VelocityXContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.VelocityXContext.userFunc0xaf50a0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.VelocityXContext.userFunc0xb10500 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const object = objects[0];
 const behaviorName = eventsFunctionContext.getBehaviorName("Behavior");
@@ -1585,9 +1578,8 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.VelocityXCont
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.VelocityXContext.GDObjectObjects1);
 
-var objects = [];
-objects.push.apply(objects,gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.VelocityXContext.GDObjectObjects1);
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.VelocityXContext.userFunc0xaf50a0(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+const objects = gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.VelocityXContext.GDObjectObjects1;
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.VelocityXContext.userFunc0xb10500(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -1668,7 +1660,7 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.VelocityYCont
 gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.VelocityYContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.VelocityYContext.userFunc0xaf50a0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.VelocityYContext.userFunc0xb10500 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const object = objects[0];
 const behaviorName = eventsFunctionContext.getBehaviorName("Behavior");
@@ -1685,9 +1677,8 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.VelocityYCont
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.VelocityYContext.GDObjectObjects1);
 
-var objects = [];
-objects.push.apply(objects,gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.VelocityYContext.GDObjectObjects1);
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.VelocityYContext.userFunc0xaf50a0(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+const objects = gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.VelocityYContext.GDObjectObjects1;
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.VelocityYContext.userFunc0xb10500(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -1779,7 +1770,7 @@ isConditionTrue_0 = false;
 {isConditionTrue_0 = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getShouldRotate();
 }
 if (isConditionTrue_0) {
-{if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
+{eventsFunctionContext.returnValue = true;}}
 
 }
 
@@ -1870,7 +1861,7 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MaxSpeedConte
 
 let isConditionTrue_0 = false;
 {
-{if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMaxSpeed(); }}}
+{eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMaxSpeed();}}
 
 }
 
@@ -2054,7 +2045,7 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MaxAccelerati
 
 let isConditionTrue_0 = false;
 {
-{if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMaxAcceleration(); }}}
+{eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMaxAcceleration();}}
 
 }
 
@@ -2238,7 +2229,7 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.CohesionRadiu
 
 let isConditionTrue_0 = false;
 {
-{if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCohesionRadius(); }}}
+{eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCohesionRadius();}}
 
 }
 
@@ -2422,7 +2413,7 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AlignmentRadi
 
 let isConditionTrue_0 = false;
 {
-{if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAlignmentRadius(); }}}
+{eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAlignmentRadius();}}
 
 }
 
@@ -2606,7 +2597,7 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.SeparationRad
 
 let isConditionTrue_0 = false;
 {
-{if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getSeparationRadius(); }}}
+{eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getSeparationRadius();}}
 
 }
 
@@ -2790,7 +2781,7 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.CohesionWeigh
 
 let isConditionTrue_0 = false;
 {
-{if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCohesionWeight(); }}}
+{eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCohesionWeight();}}
 
 }
 
@@ -2974,7 +2965,7 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.AlignmentWeig
 
 let isConditionTrue_0 = false;
 {
-{if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAlignmentWeight(); }}}
+{eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAlignmentWeight();}}
 
 }
 
@@ -3158,7 +3149,7 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.SeparationWei
 
 let isConditionTrue_0 = false;
 {
-{if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getSeparationWeight(); }}}
+{eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getSeparationWeight();}}
 
 }
 

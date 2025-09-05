@@ -344,9 +344,17 @@ gdjs.CWVCode.GDTimerTextObjects5= [];
 gdjs.CWVCode.GDTimerTextObjects6= [];
 gdjs.CWVCode.GDTimerTextObjects7= [];
 gdjs.CWVCode.GDTimerTextObjects8= [];
+gdjs.CWVCode.GDCondTextObjects1= [];
+gdjs.CWVCode.GDCondTextObjects2= [];
+gdjs.CWVCode.GDCondTextObjects3= [];
+gdjs.CWVCode.GDCondTextObjects4= [];
+gdjs.CWVCode.GDCondTextObjects5= [];
+gdjs.CWVCode.GDCondTextObjects6= [];
+gdjs.CWVCode.GDCondTextObjects7= [];
+gdjs.CWVCode.GDCondTextObjects8= [];
 
 
-gdjs.CWVCode.userFunc0xdbd610 = function GDJSInlineCode(runtimeScene) {
+gdjs.CWVCode.userFunc0xcfb660 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 runtimeScene.setBackgroundColor(100,100,240);
 const gv = runtimeScene.getVariables();
@@ -356,7 +364,7 @@ if (window.gdSend) window.gdSend("end_game", fruit, {});
 if (window.gdComplete) window.gdComplete({ fruit_collected: fruit });
 
 };
-gdjs.CWVCode.userFunc0xdbd6d8 = function GDJSInlineCode(runtimeScene) {
+gdjs.CWVCode.userFunc0xcfdac0 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 runtimeScene.setBackgroundColor(100,100,240);
 const gv = runtimeScene.getVariables();
@@ -386,7 +394,7 @@ gdjs.CWVCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.CWVCode.userFunc0xdbd610(runtimeScene);
+gdjs.CWVCode.userFunc0xcfb660(runtimeScene);
 
 }
 
@@ -394,7 +402,7 @@ gdjs.CWVCode.userFunc0xdbd610(runtimeScene);
 {
 
 
-gdjs.CWVCode.userFunc0xdbd6d8(runtimeScene);
+gdjs.CWVCode.userFunc0xcfdac0(runtimeScene);
 
 }
 
@@ -1798,6 +1806,7 @@ isConditionTrue_0 = false;
 }
 }
 if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("CondText"), gdjs.CWVCode.GDCondTextObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Deposit"), gdjs.CWVCode.GDDepositObjects1);
 gdjs.copyArray(runtimeScene.getObjects("FinalCard"), gdjs.CWVCode.GDFinalCardObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Good_shake"), gdjs.CWVCode.GDGood_9595shakeObjects1);
@@ -1863,6 +1872,9 @@ gdjs.copyArray(runtimeScene.getObjects("Welcome"), gdjs.CWVCode.GDWelcomeObjects
 }{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "SecondTick");
 }{for(var i = 0, len = gdjs.CWVCode.GDTimerTextObjects1.length ;i < len;++i) {
     gdjs.CWVCode.GDTimerTextObjects1[i].getBehavior("Text").setText("2:00");
+}
+}{for(var i = 0, len = gdjs.CWVCode.GDCondTextObjects1.length ;i < len;++i) {
+    gdjs.CWVCode.GDCondTextObjects1[i].getBehavior("Text").setText(runtimeScene.getGame().getVariables().getFromIndex(1).getAsString());
 }
 }}
 
@@ -5227,6 +5239,14 @@ gdjs.CWVCode.GDTimerTextObjects5.length = 0;
 gdjs.CWVCode.GDTimerTextObjects6.length = 0;
 gdjs.CWVCode.GDTimerTextObjects7.length = 0;
 gdjs.CWVCode.GDTimerTextObjects8.length = 0;
+gdjs.CWVCode.GDCondTextObjects1.length = 0;
+gdjs.CWVCode.GDCondTextObjects2.length = 0;
+gdjs.CWVCode.GDCondTextObjects3.length = 0;
+gdjs.CWVCode.GDCondTextObjects4.length = 0;
+gdjs.CWVCode.GDCondTextObjects5.length = 0;
+gdjs.CWVCode.GDCondTextObjects6.length = 0;
+gdjs.CWVCode.GDCondTextObjects7.length = 0;
+gdjs.CWVCode.GDCondTextObjects8.length = 0;
 
 gdjs.CWVCode.eventsList51(runtimeScene);
 gdjs.CWVCode.GDPlayerObjects1.length = 0;
@@ -5573,6 +5593,14 @@ gdjs.CWVCode.GDTimerTextObjects5.length = 0;
 gdjs.CWVCode.GDTimerTextObjects6.length = 0;
 gdjs.CWVCode.GDTimerTextObjects7.length = 0;
 gdjs.CWVCode.GDTimerTextObjects8.length = 0;
+gdjs.CWVCode.GDCondTextObjects1.length = 0;
+gdjs.CWVCode.GDCondTextObjects2.length = 0;
+gdjs.CWVCode.GDCondTextObjects3.length = 0;
+gdjs.CWVCode.GDCondTextObjects4.length = 0;
+gdjs.CWVCode.GDCondTextObjects5.length = 0;
+gdjs.CWVCode.GDCondTextObjects6.length = 0;
+gdjs.CWVCode.GDCondTextObjects7.length = 0;
+gdjs.CWVCode.GDCondTextObjects8.length = 0;
 
 
 return;

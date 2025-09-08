@@ -346,7 +346,7 @@ gdjs.CWVCode.GDTimerTextObjects7= [];
 gdjs.CWVCode.GDTimerTextObjects8= [];
 
 
-gdjs.CWVCode.userFunc0x9229f0 = function GDJSInlineCode(runtimeScene) {
+gdjs.CWVCode.userFunc0x945d30 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 runtimeScene.setBackgroundColor(100,100,240);
 const gv = runtimeScene.getVariables();
@@ -356,7 +356,7 @@ if (window.gdSend) window.gdSend("end_game", fruit, {});
 if (window.gdComplete) window.gdComplete({ fruit_collected: fruit });
 
 };
-gdjs.CWVCode.userFunc0x8f9778 = function GDJSInlineCode(runtimeScene) {
+gdjs.CWVCode.userFunc0x945de8 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 runtimeScene.setBackgroundColor(100,100,240);
 const gv = runtimeScene.getVariables();
@@ -386,7 +386,7 @@ gdjs.CWVCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.CWVCode.userFunc0x9229f0(runtimeScene);
+gdjs.CWVCode.userFunc0x945d30(runtimeScene);
 
 }
 
@@ -394,7 +394,7 @@ gdjs.CWVCode.userFunc0x9229f0(runtimeScene);
 {
 
 
-gdjs.CWVCode.userFunc0x8f9778(runtimeScene);
+gdjs.CWVCode.userFunc0x945de8(runtimeScene);
 
 }
 

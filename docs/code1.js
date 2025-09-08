@@ -723,7 +723,7 @@ if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("greytile_p2"), gdjs.Waiting_32roomCode.GDgreytile_9595p2Objects1);
 gdjs.copyArray(runtimeScene.getObjects("player2_name"), gdjs.Waiting_32roomCode.GDplayer2_9595nameObjects1);
 {for(var i = 0, len = gdjs.Waiting_32roomCode.GDplayer2_9595nameObjects1.length ;i < len;++i) {
-    gdjs.Waiting_32roomCode.GDplayer2_9595nameObjects1[i].getBehavior("Text").setText(gdjs.evtTools.string.subStr(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(3)), 1, 9999));
+    gdjs.Waiting_32roomCode.GDplayer2_9595nameObjects1[i].getBehavior("Text").setText(gdjs.evtTools.string.subStr(runtimeScene.getGame().getVariables().getFromIndex(3).getAsString(), 1, (gdjs.evtTools.string.strLen(runtimeScene.getGame().getVariables().getFromIndex(3).getAsString()) - 1)));
 }
 }{for(var i = 0, len = gdjs.Waiting_32roomCode.GDplayer2_9595nameObjects1.length ;i < len;++i) {
     gdjs.Waiting_32roomCode.GDplayer2_9595nameObjects1[i].getBehavior("Scale").setScale(0.95);

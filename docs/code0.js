@@ -56,7 +56,7 @@ gdjs.IntroCode.GDArrow_9595shorter_9595rObjects1= [];
 gdjs.IntroCode.GDArrow_9595shorter_9595rObjects2= [];
 
 
-gdjs.IntroCode.userFunc0xbc3768 = function GDJSInlineCode(runtimeScene) {
+gdjs.IntroCode.userFunc0xcd73f8 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 runtimeScene.setBackgroundColor(100,100,240);
 const params = new URLSearchParams(window.location.search);
@@ -65,7 +65,7 @@ gv.get("rid").setString(params.get("rid") || "");
 gv.get("cond").setString(params.get("cond") || "");
 gv.get("pid").setString(params.get("pid") || "");
 };
-gdjs.IntroCode.userFunc0xbc47d0 = function GDJSInlineCode(runtimeScene) {
+gdjs.IntroCode.userFunc0x8f7750 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 runtimeScene.setBackgroundColor(100,100,240);
 // Helper to send an in-game event to Qualtrics
@@ -92,7 +92,7 @@ window.gdComplete = function(summary) {
 };
 
 };
-gdjs.IntroCode.userFunc0xbc48a0 = function GDJSInlineCode(runtimeScene) {
+gdjs.IntroCode.userFunc0x8f7820 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 (function () {
   const params = new URLSearchParams(window.location.search);
@@ -115,7 +115,7 @@ gdjs.IntroCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.IntroCode.userFunc0xbc3768(runtimeScene);
+gdjs.IntroCode.userFunc0xcd73f8(runtimeScene);
 
 }
 
@@ -123,7 +123,7 @@ gdjs.IntroCode.userFunc0xbc3768(runtimeScene);
 {
 
 
-gdjs.IntroCode.userFunc0xbc47d0(runtimeScene);
+gdjs.IntroCode.userFunc0x8f7750(runtimeScene);
 
 }
 
@@ -131,7 +131,7 @@ gdjs.IntroCode.userFunc0xbc47d0(runtimeScene);
 {
 
 
-gdjs.IntroCode.userFunc0xbc48a0(runtimeScene);
+gdjs.IntroCode.userFunc0x8f7820(runtimeScene);
 
 }
 
